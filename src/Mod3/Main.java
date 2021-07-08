@@ -9,9 +9,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter array size.");
-        System.out.println("Number of rows: ");
+        System.out.print("Number of rows: ");
         int rows = scanner.nextInt();
-        System.out.println("Number of columns: ");
+        System.out.print("Number of columns: ");
         int columns = scanner.nextInt();
         int[][] matrix = new int[rows][columns];
 
@@ -19,7 +19,7 @@ public class Main {
         for(int i = 0; i < rows; i++) {
             System.out.print("| ");
             for (int j = 0; j < columns; j++) {
-                matrix[i][j] = i * j;
+                matrix[i][j] = (i + 1) * 10 + j + 1;
                 System.out.print(Integer.toString(i + 1) + Integer.toString(j + 1) + " ");
             }
             System.out.println("|");
