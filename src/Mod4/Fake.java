@@ -15,13 +15,18 @@ public class Fake {
         for (int i = 0; i < 8; i++) {
             if (i == 0 || i % 2 == 0) {
                 temp = RandomChar();
-                if (Arrays.asList(vowels).contains((char)temp)) {
+                if (Arrays.asList(vowels).contains((char) temp)) {
                     randChar[i] = (char) (temp + 1);
-                }
-                else
+                } else {
                     randChar[i] = (char) temp;
-            } else
-                randChar[i] = vowels[i / 2];
+                }
+            } else {
+                if (i > 5) {
+                    randChar[i] = vowels[i / 2];
+                } else {
+                    randChar[i] = vowels[i];
+                }
+            }
         }
         StringBuilder fakeWord = new StringBuilder("");
         fakeWord.append(randChar);
