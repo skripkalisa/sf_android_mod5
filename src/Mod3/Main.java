@@ -1,5 +1,8 @@
 package Mod3;
 
+// Создать и вывести на печать двумерный массив.
+// Размер задаётся пользователем.
+
 import java.util.Scanner;
 
 public class Main {

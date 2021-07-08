@@ -1,5 +1,7 @@
 package Mod4;
-
+// Простая задача.
+// Написать код, который генерирует строки из  8 - 12  ASCII символов
+// (генератор сложных паролей)
 public class Main {
     public static void main(String[] args) {
         int min = 33;
