@@ -31,15 +31,12 @@ public class Fake {
         StringBuilder fakeWord = new StringBuilder("");
         fakeWord.append(randChar);
         System.out.println(fakeWord);
-
-
     }
 
-    public static int RandomChar() {
+    private static int RandomChar() {
         int min = 97;
         int max = 122;
         return (char) Math.floor(Math.random() * (max - min + 1) + min);
     }
-
 }
 
